@@ -29,6 +29,7 @@ const tourSchema = mongoose.Schema({
   price: {
     type: Number,
     min: [0, "Price can't be less than 0"],
+    required: true
   },
   views: {
     type: Number,
